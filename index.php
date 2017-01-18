@@ -29,7 +29,14 @@ $(document).on("keypress keyup","#buscaperro",function(){
 	   });//get
 	
 });
-
+//---------------------------------------------------
+// PAGINACION
+$(document).on("click",".pagination li a",function(){
+	var numpage = $(this).data("page");
+	$.get("perro_lista_tabla.php",{page:numpage},function(data){			$("#tabladatos").html(data);	
+	});
+			
+});
 
 //---------------------------------------------------
 //DIALOGO DE BORRADO
