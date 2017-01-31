@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Proyecto Con Ajax</title>
+    <title>Residencia Ajaxnina</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -29,14 +29,14 @@
   </head>
   <body>
      <h1>Residencia canina</h1>
-     <!--<h4 align="center">Direcci&oacute;n<input type="text" id="buscadireccion" value=""></h4>-->
-    <div id="seleccion"> <b>Order By</b>  <select name="campos" id="campos">
-      <option value="1">Id</option>
-      <option value="2">Fecha</option>
-      <option value="7">Raza</option>
      
-      <option value="5">Nombre</option>
-      <option value="3">Nombre del dueño</option>
+     <div id="seleccion"> <b style="color:white">Ordenar por</b>  <select name="campos" id="campos">
+      <option value="1">Id</option>
+      <option value="5">Fecha</option>
+      <option value="3">Raza</option>
+     
+      <option value="4">Nombre</option>
+      <option value="2">Nombre del dueño</option>
 
     </select>
       <select name="forma" id="forma">
@@ -44,6 +44,7 @@
       <option value="DESC">Desc</option>
    
     </select></div>
+    
    
 
     <div class="container-fluid">

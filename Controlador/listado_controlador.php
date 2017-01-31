@@ -24,4 +24,3 @@ if ($action == 'ajax') {
   </div>
   <?php
 }
-?>

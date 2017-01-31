@@ -13,7 +13,7 @@ class Contenido {
  
 
   //, $fecha_alta, $tipo, $operacion, $provincia, $superficie, $precio, $imagen, $vendedor
-  function __construct($idperro, $fecha,$nombre,$dueno,$idraza, $nombrederaza) {
+  function __construct($idperro, $fecha,$nombre,$dueno,$idraza, $nombrederaza = null) {
     $this->idperro = $idperro;
     $this->fecha = $fecha;
     $this->nombre = $nombre;
@@ -54,10 +54,8 @@ class Contenido {
   public function insert() {
     require_once 'conexion.php';
     $conexion = canino::conectar();
-    $insercion = "INSERT INTO perro (idperro,nombre,dueno,idraza,fecha) "
-            . "VALUES (\"" . $this->idperro . "\", \"" .$this->nombre . "\", \"" . $this->dueno . "\", \"" . $this->idraza . "\", \"" . $this->fecha . "\")";
+    $insercion = "INSERT INTO perro (fecha,nombre,dueno,idraza) VALUES (\"" . $this->fecha . "\", \"" .$this->nombre . "\", \"" . $this->dueno . "\", \"" . $this->idraza . "\")";
 
-    //echo $insercion;
 
     $conexion->exec($insercion);
   }

@@ -7,13 +7,8 @@ registro. Luego esos datos se enviarán a una página que ejecutará INSERT.
 • Para realizar una baja, se mostrará un botón que ejecutará DELETE.
 • La modificación se realiza mediante UPDATE.
 */
-/* 
-    Created on : 03-nov-2016, 21:36:30
-    Author     : Junior Castillo
-*/
-
 body {
-  background-image: url(http://www.jonaga.com/imagenes/fondo%20pagina%20fijo.jpg);
+  background-image: url(https://images-na.ssl-images-amazon.com/images/I/51SSxTQuRDL.jpg);
   /*background-color: #125598;*/
   font-family: Arial, Helvetica, sans-serif;
   padding: 0px;
@@ -26,7 +21,15 @@ body #salir {
   width: 50px;
   opacity: 0.7; }
 body h1 {
-  color: aliceblue; }
+                font-family: miFuente;
+                font-size: 354%;
+                text-align: center;
+                color: white;
+                text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
+
+              @font-face {
+                font-family: 'miFuente';
+                src: url("../Vista/Style_Admin/fuentes/Pacifico.ttf"); }
 body .Centrado {
   border: 1px solid red; }
 body .inputfile {
@@ -42,19 +45,19 @@ table#tabladatos th {
   font-weight: normal;
   padding: 1.1% 0.2% 1.1% 0.5%;
   height: 10%;
-  background: #cacaca;
-  border-top: 4px solid #cacaca;
+  background: #cc7722;
+  border-top: 4px solid #cc7722;
   border-bottom: 1px solid #fff;
-  color: black; }
+  color: #5c3919; }
 table#tabladatos td {
   padding: 0.5% 0.1% 0.5% 0.1%;
   height: 10%;
-  background: #807373;
+  background: whitesmoke;
   border-bottom: 1px solid #fff;
   color: #000000;
   border-top: 1px solid transparent; }
 table#tabladatos tr:hover td {
-  background: #d0dafd;
+  background: #e09d38;
   color: #339; }
 table a:link, table a:visited {
   background-color: #cacaca;

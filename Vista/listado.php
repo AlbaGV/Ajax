@@ -1,4 +1,4 @@
-
+<?php if (!empty($_POST["idraza"])  && empty($_POST["idperro"]) ) sleep(1); ?>
   <table  class="table table-bordered" id="tabladatos">
     <tr>
       <th id="i">ID</th>
@@ -8,7 +8,7 @@
       <th id="s">idRaza</th> 
   
      
-      <th colspan="2">Funciones de Admin</th>
+      <th colspan="2">Acciones</th>
 
     </tr>
     <?php
@@ -24,8 +24,8 @@
         <td class="idraza" name="<?=$perros->getRaza()?>"><?=$perros->getNombredeRaza()?></td>
        
        
-        <td class="accion"> <button id="borrar" type="button" class="btn btn-danger">Delete</button>
-           &nbsp; <button id="modificar" type="button" class="btn btn-warning" >Change</button></td>
+        <td class="accion"> <button id="borrar" type="button" class="btn btn-danger">Borrar</button>
+           &nbsp; <button id="modificar" type="button" class="btn btn-warning" >Cambiar</button></td>
 
       </tr>
 

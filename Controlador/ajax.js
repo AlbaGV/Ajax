@@ -131,7 +131,7 @@ function load(page) {
       $(".outer_div").html(data).fadeIn('slow');
       $("#loader").html("");
     }
-  })//Ajax
+  });//Ajax
 //-----------Fin de la carga del listad--------------------------------------
 //--------------------------------------------------------------------------------------------
 //-----------Comienzo DIALOGO DE BORRADO ------------------------------------------
@@ -146,7 +146,7 @@ function load(page) {
         //Ajax con get
         $.get("../Controlador/borrar.php", {"idperro": idperro}, function (data, status) {
           $("#perro_" + idperro).fadeOut(1000);
-        })//get			
+        });//get			
         //Cerrar la ventana de dialogo				
         $(this).dialog("close");
       },
@@ -275,18 +275,5 @@ function load(page) {
   }
 //-------AutoCompleta -------------//
 //AUTOCOMPLETADO
-  $(document).on("keypress keyup", "#buscaperro", function () {
-    var valor = $("#buscaperro").val();
-    $.get("../Vista/listado.php",
-            {
-              busquedadireccion: valor
-            },
-            function (data) {
-              //vuelve a pintar el listado
-              $("#contenedor").html(data);
-            });//get
-
-  });
-
 
 }

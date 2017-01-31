@@ -1,8 +1,6 @@
 
 <!DOCTYPE html>
-<!--
-@uthor Junior Castillo Santana
--->
+
 <html>
   <head>
     <meta charset="UTF-8">

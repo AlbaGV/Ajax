@@ -3,8 +3,8 @@
 
 function paginate($reload, $page, $tpages, $adjacents) {
  
-	$prevlabel = "&lsaquo; Back";
-	$nextlabel = "Next &rsaquo;";
+	$prevlabel = "&lsaquo; Anterior";
+	$nextlabel = "Siguiente &rsaquo;";
 	$out = '<ul class="pagination pagination-large">';
 	
 	// previous label
