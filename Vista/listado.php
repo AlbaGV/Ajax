@@ -5,7 +5,7 @@
       <th id="f">Fecha Alta</th>
       <th id="t">Nombre perro</th>
        <th id="t">Nombre dueño</th>
-      <th id="s">idRaza</th> 
+      <th id="s">Raza</th> 
   
      
       <th colspan="2">Acciones</th>
