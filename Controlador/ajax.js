@@ -29,8 +29,8 @@ $(document).ready(function () {
       validClass: "verde",
     rules: {
       fechaalta: {
-        required: true,
-        date : true
+        required: true
+        
       },
       nombre: {
         required: true
@@ -45,8 +45,8 @@ $(document).ready(function () {
     },
     messages: {
       fechaalta:{
-       required: "Introducir la fecha",
-       date: "No es una fecha"
+       required: "Introducir la fecha"
+
        },
      nombre: "El campo nombre esta vacio",
       dueno: "El campo dueno esta vacio",
@@ -172,8 +172,8 @@ function load(page) {
       validClass: "verde",
     rules: {
       alta: {
-        required: true,
-         date:true
+        required: true
+      
       },
       nombre: {
         required: true
@@ -186,10 +186,9 @@ function load(page) {
         minlength: 1}
     },
     messages: {
-      alta: {
-        required: "Debe introducir la fecha."
         
-      },
+      alta: "Debe introducir la fecha.",
+        
       nombre: "El campo nombre esta vacio",
       dueno: "El campo dueno esta vacio",
       idraza: "El campo Mensaje es obligatorio.",

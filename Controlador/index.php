@@ -30,10 +30,10 @@
   <body>
      <h1>Residencia canina</h1>
      
-     <div id="seleccion"> <b style="color:white">Ordenar por</b>  <select name="campos" id="campos">
+     <div id="seleccion"> <b style="font-size: 30px; color:#5c3919">Ordenar por</b>  <select name="campos" id="campos">
       <option value="1">Id</option>
       <option value="5">Fecha</option>
-      <option value="3">Raza</option>
+      
      
       <option value="4">Nombre</option>
       <option value="2">Nombre del dueño</option>
@@ -49,7 +49,7 @@
 
     <div class="container-fluid">
      
-      <div style="cursor:pointer; width:30px; "><img src="../Vista/img/nuevo.png" width="30" height="30" id="nuevo" title="Nuevo Perro"></div>
+      <div style="cursor:pointer; width:30px; "><img src="../Vista/img/Doge.png" width="50" height="50" id="nuevo" title="Nuevo Perro"></div>
 
       <hr>
 
