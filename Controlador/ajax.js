@@ -19,8 +19,7 @@ $(document).ready(function () {
 //Fin de ordenar
 //-----------------------------------------------------------------------------------------------------------------
 
-  //---- Nuevao inmueble --------------------------------------------------------------------------------------
-  //Boton de nuevo inmueble 
+ 
   //Crea nueva fila al final de la tabla
   //Con dos nuevos botones (guardarnuevo y cancelarnuevo)
   //**********Valido el formulario de alta************************
@@ -197,7 +196,7 @@ function load(page) {
   });//FIn de la validacion 
   
   //---------------------------------------------------------------------------------------------
-  //-----MODIFICAR EL INMUEBLE-----------------------------------------------
+  //-----MODIFICAR ----------------------------------------------
   
   $("#dialogomodificar").dialog({
     autoOpen: false,
@@ -239,15 +238,15 @@ function load(page) {
   //Pinto los datos de cada campo
   $(document).on("click", "#modificar", function () {
     //Obtenemos lo valores de la fila que queremos modificar
-    //Obtenemos el idinmueble de la fila
+   
     idperro = $(this).parents("tr").data("idperro");
     //muentra el valor de esa fila 
     $("#idModificar").val($(this).parent().siblings("td.id").html());
     //Para que ponga el campo de la fecha de alta con su val
     $("#fechaAltaModificar").val($(this).parent().siblings("td.alta").html());
-    //precio que cuesta el inmueble
+   
     $("#nombreModificar").val($(this).parent().siblings("td.nombre").html());
-    //direccion del inmueble
+  
     $("#duenoModificar").val($(this).parent().siblings("td.dueno").html());
 
     var idrazamodificar = $(this).parent().siblings("td.idraza").attr("name");
