@@ -12,7 +12,7 @@
 
     </tr>
     <?php
-     //Esta es la imagen --><td class="imagen"> $casa->getImagen()</td> <th>Imagen</th>
+    
     foreach ($data['listado'] as $perros) {
       ?>
       <tr id="perro_<?= $perros->getId() ?>" align="center" data-idperro="<?= $perros->getId() ?>">
