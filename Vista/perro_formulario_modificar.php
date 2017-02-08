@@ -22,7 +22,7 @@
          <div id="th">Raza</div>
            <div id="td"><select placeholder="Raza" name="idraza" id="razaModificar">
             <?php
-            //Esta es la imagen --><td class="imagen"> $casa->getImagen()</td> <th>Imagen</th>
+            
             foreach ($data['listadoRaza'] as $fila2) {
               ?>
               <option value="<?php echo $fila2->getIdRaza(); ?>"><?php echo$fila2->getNombreRaza(); ?></option>
