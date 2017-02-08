@@ -12,7 +12,7 @@ class Contenido {
  
  
 
-  //, $fecha_alta, $tipo, $operacion, $provincia, $superficie, $precio, $imagen, $vendedor
+  
   function __construct($idperro, $fecha,$nombre,$dueno,$idraza, $nombrederaza) {
     $this->idperro = $idperro;
     $this->fecha = $fecha;
@@ -60,7 +60,7 @@ class Contenido {
     $conexion->exec($insercion);
   }
 
-//Modifico el inmueble
+//Modifico 
   public function update() {
     require_once 'conexion.php';
     $conexion = canino::conectar();
@@ -88,7 +88,6 @@ class Contenido {
     return $numrows;
   }
 
-//El get que muestra la lista de los inmueble
  
 
   public static function getListPerro($o,$p) {
