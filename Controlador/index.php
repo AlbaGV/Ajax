@@ -62,7 +62,7 @@
 
       </div>
 
-      <!-- CAPA DE DIALOGO Borrar INMUEBLE -->
+      
       <div id="dialogoborrar" class="dialogo" title="Eliminar Perro">
         <p>¿Esta seguro que desea eliminar los datos del perro?</p>
       </div>
@@ -71,13 +71,13 @@
      $data['listadoRaza'] = Raza::getListRaza();
      
      ?>
-      <!-- CAPA DE DIALOGO MODIFICAR INMUEBLE -->
+   
       <div id="dialogomodificar" class="dialogo" title="Modificar Perro">
         <?php include "../Vista/perro_formulario_modificar.php";
         ?>
       </div>
       
-      <!-- CAPA DE DIALOGO NUEVO INMUEBLE -->
+      
       <div id="dialogonuevo" class="dialogo" title="Nuevo Perro">
         <?php include "../Vista/formulario_nuevos.php";
         ?>
